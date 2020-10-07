@@ -56,20 +56,7 @@ void printPostorder(struct Node* node) {
      printf("%d ", node->key); 
 } 
   
-/* Given a binary tree, print its nodes in inorder*/
-void printInorder(struct Node* node) { 
-     if (node == NULL) 
-          return; 
-  
-     /* first recur on left child */
-     printInorder(node->left); 
-  
-     /* then print the data of node */
-     printf("%d ", node->key);   
-  
-     /* now recur on right child */
-     printInorder(node->right); 
-} 
+
   
 /* Given a binary tree, print its nodes in preorder*/
 void printPreorder(struct Node* node) { 
@@ -85,6 +72,20 @@ void printPreorder(struct Node* node) {
      /* now recur on right subtree */
      printPreorder(node->right); 
 }     
+/* Given a binary tree, print its nodes in inorder*/
+void printInorder(struct Node* node) { 
+     if (node == NULL) 
+          return; 
+  
+     /* first recur on left child */
+     printInorder(node->left); 
+  
+     /* then print the data of node */
+     printf("%d ", node->key);   
+  
+     /* now recur on right child */
+     printInorder(node->right); 
+} 
   
 /* Given a non-empty binary search tree, return the minimum data value found in that  
 tree. Note that the entire tree does not need to be searched. */
@@ -363,15 +364,7 @@ struct Node* delete(struct Node* node, int key) {
  */
 int main(int argc, char** argv) {
     struct Node *root = NULL; 
-/*
-    root = insertWithParent(root, 50); 
-    root = insertWithParent(root, 30); 
-    root = insertWithParent(root, 20); 
-    root = insertWithParent(root, 40); 
-    root = insertWithParent(root, 70); 
-    root = insertWithParent(root, 60); 
-    root = insertWithParent(root, 80);
-*/
+
     
     struct Node *node;
     node = findMinRecursive(root);
