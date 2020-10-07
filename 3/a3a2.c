@@ -80,16 +80,16 @@ void main(){
 		scanf("%d",&choice);
 		switch(choice){
 			case 1:
-					printf("Enter the data of the new node at the start\n");
-					scanf("%d",&t1);
-					if(f==0){
-						head=nnode(head);
-						head->data=t1;
-						head->next=head;
-						last=head;
-					}
-					else 
-						add_ele(head,t1,temp);
+			printf("Enter the data of the new node at the start\n");
+			scanf("%d",&t1);
+			if(f==0){
+					head=nnode(head);
+					head->data=t1;
+					head->next=head;
+					last=head;
+				}
+			else 
+					add_ele(head,t1,temp);
 					f++;
 			break;
 			case 2:
