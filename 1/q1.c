@@ -65,11 +65,7 @@ void main(){
 	printf("%d \n",s);
 	float average=avg(s,n);
 	printf("%f \n",average);
-	/*printf("Enter a no to find the element : ");
-	int pos,fi;
-	scanf(" %d",&fi);
-	pos=find(a,fi);
-	printf("%d\n",pos);*/
+	
 	address(a);
 	
 }
